@@ -17,7 +17,10 @@ $(document).ready(function() {
       cohort = json;
       cohortLength = cohort.eta.length - 1;
       etaIndex = Math.floor(Math.random() * cohortLength + 1);
-      console.log(etaIndex);
+      if(cohort.eta.firstName === "Wallace"){
+        alert("Fixed 'favourite' to 'favorite' for you");
+      }
+
 
       makeEta(etaIndex);
     }); //done

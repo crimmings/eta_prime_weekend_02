@@ -1,16 +1,40 @@
 body {
   font-family: Avenir, sans-serif;
-}
-
-main {
-  margin: 0 auto;
-  padding: 10px;
-  width: 800px;
-  border: 1px solid gray;
+  background-image: url('movie_theatre.jpg');
+  background-size: auto;
+  background-position:top;
+  background-repeat: no-repeat;
 }
 
 header {
   width: 800px;
   padding: 10px;
   margin: 0 auto;
+}
+
+header h1 {
+  color: white;
+}
+
+.highlight {
+  margin: 100px auto;
+  padding: 10px;
+  width: 800px;
+  border: 1px solid gray;
+  positon: absolute;
+
+}
+
+.butt#buttback {
+  margin: 10px auto;
+  width: 100px;
+  positon: relative;
+  float: left;
+}
+
+.butt#buttfwd {
+  margin: 10px auto;
+  width: 100px;
+  position: relative;
+  float: right;
 }
