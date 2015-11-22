@@ -7,7 +7,7 @@ $(document).ready(function() {
   var compiledHtml = $('#highlight').html();
   var template = Handlebars.compile(compiledHtml);
 
-  getEta();
+
 
 //function grabs /data/eta.json and calculates a random number to find inital eta array index
   function getEta() {
@@ -30,24 +30,23 @@ $(document).ready(function() {
     $('.highlight').html(templateMake);
   };
 
-//button handlers for forward/previous.  Not working. 
-  $('#buttfwd').on('click','button', function() {
-    etaIndex ++;
-    if (etaIndex > cohort.eta.length + 1) {
-      etaIndex = 0;
-    }
-    makeEta(etaIndex);
-  });
+  getEta();
 
-  $('#buttback').on('click', 'button', function() {
-    etaIndex --;
-    if (etaIndex < 0) {
-      etaIndex = cohortLength;
+  //button handlers for forward/previous.  Not working.
+    $('.buttfwd').on('click', function() {
+      etaIndex ++;
+      if (etaIndex > cohortLength) {
+        etaIndex = 0;
+      }
+      makeEta(etaIndex);
+    });
 
-    }
-    makeEta(etaIndex);
-  }); //end of .buttback
+    $('.buttback').on('click', function() {
+      etaIndex --;
+      if (etaIndex < 0) {
+        etaIndex = cohortLength;
+      }
 
-
-
+      makeEta(etaIndex);
+    }); //end of .buttback
 }); //document ready
