@@ -119,7 +119,7 @@
                     "releaseYear": "1986"
                 },
                 {
-                    "movieName": "The Bleus Brothers",
+                    "movieName": "The Blues Brothers",
                     "releaseYear": "1981"
                 }
             ]
@@ -255,8 +255,8 @@
             ]
         },
         {
-            "firstName": "gwen",
-            "lastName": "paul",
+            "firstName": "Gwen",
+            "lastName": "Paul",
             "favoriteFoods": [
                 "steak",
                 "icecream",
@@ -266,11 +266,11 @@
             "hotLineBling": false,
             "favoriteMovies": [
                 {
-                    "movieName": "knocked up",
+                    "movieName": "Knocked Up",
                     "releaseYear": "2007"
                 },
                 {
-                    "movieName": "the town",
+                    "movieName": "The Town",
                     "releaseYear": "2010"
                 }
             ]
@@ -471,13 +471,13 @@
         {
             "firstName": "Wallace",
             "lastName": "Wylie",
-            "favouriteFoods": [
+            "favoriteFoods": [
                 "Pizza",
                 "Vegetable Curry",
                 "Mock Duck With Rice From Quang"
             ],
             "hotLineBline": true,
-            "favouriteMovies": [
+            "favoriteMovies": [
                 {
                     "movieName": "Wings Of Desire",
                     "releaseYear": 1987
