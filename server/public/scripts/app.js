@@ -34,8 +34,12 @@ $(document).ready(function() {
    */
   function makeEta(etaIndex) {
     var templateMake = template(cohort.eta[etaIndex]);
-    $('.highlight').html(templateMake);
-  };
+    $('.highlight').fadeOut(300, function() {
+      $(this).html(templateMake);
+    }).fadeIn(300);
+};
+
+  //  html(templateMake);
 
   getEta();
 
