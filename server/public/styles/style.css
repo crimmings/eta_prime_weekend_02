@@ -1,5 +1,7 @@
+
+
 body {
-  font-family: Avenir, sans-serif;
+  font-family: Graphique, sans-serif;
   background-image: url('movie_theatre.jpg');
   background-size: auto;
   background-position:top;
@@ -7,34 +9,71 @@ body {
 }
 
 header {
+  border: 1px solid black;
   width: 800px;
   padding: 10px;
   margin: 0 auto;
 }
 
 header h1 {
+  font-family: Graphique;
+  border: 1px solid black;
+  padding-top: 50px;
   color: white;
+  font-size: 56px;
+  line-height: 2px;
+  text-shadow: 2px 2px #CD2626;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .highlight {
-  margin: 100px auto;
+  margin: 150px auto;
   padding: 10px;
-  width: 800px;
-  border: 1px solid gray;
-  positon: absolute;
-
-}
-
-.butt#buttback {
-  margin: 10px auto;
-  width: 100px;
+  width: 1000px;
   positon: relative;
-  float: left;
+  text-align:center;
+
 }
 
-.butt#buttfwd {
-  margin: 10px auto;
-  width: 100px;
-  position: relative;
+#favoritemovies {
+  text-align: center;
+}
+
+span h2 {
+  display: inline;
+  font-size: 42px;
+  padding: 15px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #CD2626;
+}
+
+.favmovie {
+  display: block;
+  color: black;
+  font-weight: bolder;
+  font-size: 28px;
+  width: 990px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.moviename {
+  font-size: 16px;
+  line-height: 10px;
+  padding: 15px 5px 15px 5px;
+}
+
+.buttback {
+  float: left;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.buttfwd {
   float: right;
+  margin-top: 100px;
+  margin-right: 20px;
 }

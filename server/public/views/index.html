@@ -13,36 +13,37 @@
 <body>
 
   <header>
-    <h1>Eta Movie Tastes</h1>
+    <h1>Etaflix</h1>
   </header>
 
 
-  <div class="butt"><button class="buttback">Rewind</button></div>
-<section class='highlight'>
+  <div class="buttback">
+    <img src="back.jpg" alt="back arrow">
+  </div>
+  <div class="buttfwd">
+    <img src="forward.jpg" alt="forward arrow">
+  </div>
 
-<script id='highlight' type='text/x-handlebars-template'>
+  <section class='highlight'>
 
+    <script id='highlight' type='text/x-handlebars-template'>
 
-<span>
-  <h2> {{firstName}} {{lastName}} </h2>
-</span>
+      <span>
+        <h2> {{firstName}} {{lastName}} </h2>
+      </span>
+      <span class="favmovie">
+        <p>Favorite Movies</p>
+      </span>
+      {{#each favoriteMovies}}
 
-{{#each favoriteMovies}}
+      <span class="moviename">
+        <em>{{movieName}} ({{releaseYear}})</em>
+      </span>
+      {{/each}}
 
-<ul>
+    </script>
 
-<li><em>{{movieName}}, {{releaseYear}}</em></li>
-
-</ul>
-
-{{/each}}
-
-</script>
-
-</section>
-
-
-<div class="butt"><button class="buttfwd">Fast-Forward</button></div>
+  </section>
 
 
 </body>

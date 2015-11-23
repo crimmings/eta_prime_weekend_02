@@ -9,22 +9,18 @@ $(document).ready(function() {
 
 
 
-//function grabs /data/eta.json and calculates a random number to find inital eta array index
-  function getEta() {
-    $.ajax({
-      url: '/data/eta.json'
-    }).done(function(json) {
-      cohort = json;
-      cohortLength = cohort.eta.length - 1;
-      etaIndex = Math.floor(Math.random() * cohortLength + 1);
-      if(cohort.eta.firstName === "Wallace"){
-        alert("Fixed 'favourite' to 'favorite' for you");
-      }
-
-
-      makeEta(etaIndex);
-    }); //done
-  }; //getEta function
+  //function grabs /data/eta.json and calculates a random number to find inital eta array index
+    function getEta() {
+      $.ajax({
+        url: '/data/eta.json'
+      }).done(function(json) {
+        cohort = json;
+        cohortLength = cohort.eta.length - 1;
+        etaIndex = Math.floor(Math.random() * cohortLength + 1);
+  
+        makeEta(etaIndex);
+      }); //done
+    }; //getEta function
 
 
 //adding json data to DOM
