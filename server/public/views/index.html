@@ -16,7 +16,8 @@
     <h1>Etaflix</h1>
   </header>
 
-
+  <!--Arrow Images act as buttons. Initially had one before <section> and one after, but
+that made it difficult to style. Discovered they needed to be right next to each other-->
   <div class="buttback">
     <img src="back.jpg" alt="back arrow">
   </div>
@@ -24,17 +25,20 @@
     <img src="forward.jpg" alt="forward arrow">
   </div>
 
+
   <section class='highlight'>
 
+    <!--Handlebars script-->
     <script id='highlight' type='text/x-handlebars-template'>
 
       <span>
         <h2> {{firstName}} {{lastName}} </h2>
       </span>
       <span class="favmovie">
-        <p id ="favoritemovies">Favorite Movies</p>
+        <p id="favoritemovies">Favorite Movies</p>
       </span>
       {{#each favoriteMovies}}
+      <!--#each iterates and lists all of each person's fav movies-->
 
       <span class="moviename">
         <em>{{movieName}} ({{releaseYear}})</em>

@@ -1,19 +1,18 @@
-
-
 body {
   font-family: Graphique, sans-serif;
   background-image: url('movie_theatre.jpg');
   background-size: auto;
-  background-position:top;
+  background-position: top;
   background-repeat: no-repeat;
 }
-
 header {
   border: 1px solid black;
   width: 800px;
   padding: 10px;
   margin: 0 auto;
 }
+
+/* Page title */
 
 header h1 {
   font-family: Graphique;
@@ -28,18 +27,20 @@ header h1 {
   text-transform: uppercase;
 }
 
+/* Main section with highlighted eta member*/
+
 .highlight {
   margin: 150px auto;
   padding: 10px;
   width: 1000px;
   positon: relative;
-  text-align:center;
-
+  text-align: center;
 }
-
 #favoritemovies {
   text-align: center;
 }
+
+/* Handlebars content*/
 
 span h2 {
   display: inline;
@@ -48,6 +49,8 @@ span h2 {
   letter-spacing: 2px;
   text-shadow: 2px 2px #CD2626;
 }
+
+/* Handlebars content*/
 
 .favmovie {
   display: block;
@@ -60,17 +63,23 @@ span h2 {
   margin-bottom: 50px;
 }
 
+/* Handlebars content*/
+
 .moviename {
   font-size: 16px;
   line-height: 10px;
   padding: 15px 5px 15px 5px;
 }
 
+/* Acts as a back button (arrow image)*/
+
 .buttback {
   float: left;
   margin-top: 100px;
   margin-left: 20px;
 }
+
+/* Acts as a forward button (arrow image)*/
 
 .buttfwd {
   float: right;
